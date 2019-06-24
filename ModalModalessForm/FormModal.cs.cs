@@ -9,21 +9,11 @@ using System.Windows.Forms;
 
 namespace ModalModalessForm
 {
-    public partial class FormMain : Form
+    public partial class Form2 : Form
     {
-        public FormMain()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void 이프로그램은modalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StatusTitle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
