@@ -4,26 +4,96 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace ModalModalessForm
 {
     public partial class FormMain : Form
     {
-        public FormMain()
+           public FormMain()
         {
             InitializeComponent();
         }
 
         private void 이프로그램은modalToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.statusMessage.Text = "이 프로그램은..(Modal) 창을 띄웁니다.";
+            FormAbout m = new FormAbout();
+            m.Title = "이 프로그램은..(Modaless) 창 띄우기";
+            m.ShowDialog();
 
         }
 
         private void StatusTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.statusMessage.Text = "종료합니다.";
+            Application.ExitThread();
+        }
+
+        private void ModalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewMethod();
+
+        }
+
+        private void ShowModal()
+        {
+            this.statusMessage.Text = "모달 창을 띄웁니다.";
+            FormModal m = new FormModal();
+            m.Title = "모달 창띄우기";
+            m.ShowDialog();
+        }
+
+
+        private void NewMethod()
+        {
+            this.statusMessage.Text = "모달 창을 띄웁니다.";
+            FormModaless m = new FormModal();
+            m.Title = "모달 창띄우기";
+            m.ShowDialog();
+        }
+
+        private void ModalessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewMethod1();
+
+        }
+
+        private void ShowModaless()
+        {
+            this.statusMessage.Text = "모달리스 창을 띄웁니다.";
+            FormModaless m = new FormModaless();
+            m.Title = "모달리스 창띄우기";
+            m.Show();
+        }
+
+
+        private void NewMethod1()
+        {
+            this.statusMessage.Text = "모달리스 창을 띄웁니다.";
+            FormModaless m = new FormModaless();
+            m.Title = "모달리스 창띄우기";
+            m.Show();
+        }
+
+        private void 이프로그램은ModalessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtmModal_Click(object sender, EventArgs e)
+        {
+            ShowModal();
+        }
+
+        private void BtnModaless_Click(object sender, EventArgs e)
+        {
+              ShowModaless();  
         }
     }
 }

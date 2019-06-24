@@ -9,8 +9,14 @@ using System.Windows.Forms;
 
 namespace ModalModalessForm
 {
+   
     public partial class Form2 : Form
     {
+        public string Title
+        {
+            set { this.Text = value; }
+        }
+
         public Form2()
         {
             InitializeComponent();

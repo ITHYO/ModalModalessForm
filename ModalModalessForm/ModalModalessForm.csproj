@@ -56,11 +56,14 @@
     <Compile Include="FormAbout.Designer.cs">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormModal.cs.cs">
+    <Compile Include="FormModal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormModal.cs.Designer.cs">
-      <DependentUpon>FormModal.cs.cs</DependentUpon>
+    <Compile Include="FormModal.Designer.cs">
+      <DependentUpon>FormModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModal1.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormModaless.cs">
       <SubType>Form</SubType>
@@ -76,8 +79,8 @@
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormModal.cs.resx">
-      <DependentUpon>FormModal.cs.cs</DependentUpon>
+    <EmbeddedResource Include="FormModal.resx">
+      <DependentUpon>FormModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormModaless.resx">
       <DependentUpon>FormModaless.cs</DependentUpon>

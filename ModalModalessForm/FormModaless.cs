@@ -9,11 +9,19 @@ using System.Windows.Forms;
 
 namespace ModalModalessForm
 {
+   
     public partial class FormModaless : Form
     {
+        public string Title
+        {
+            set { this.Text = value; }
+        }
+
         public FormModaless()
         {
             InitializeComponent();
         }
+
+        public string Title { get; internal set; }
     }
 }
